@@ -1,4 +1,6 @@
-# DiscordWebhookAPI [![Poggit](https://poggit.pmmp.io/ci.shield/CortexPE/DiscordWebhookAPI/~)](https://poggit.pmmp.io/ci/CortexPE/DiscordWebhookAPI/~)
+<h1>DiscordWebhookAPI<img src="https://raw.githubusercontent.com/CortexPE/DiscordWebhookAPI/master/dwapi.png" height="64" width="64" align="left"></img><img src="https://poggit.pmmp.io/ci.shield/CortexPE/DiscordWebhookAPI/~"></img></h1>
+<br />
+
 A PocketMine-MP Virion to easily send messages via Discord Webhooks
 
 # Usage:
