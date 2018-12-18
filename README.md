@@ -32,7 +32,7 @@ $msg->setAvatarURL("https://cortexpe.xyz/utils/kitsu.png"); // optional
 $msg->setContent("INSERT TEXT HERE"); // optional. Maximum length is 2000 characters, the limit is set by discord, therefore it is not hardcoded within this API
 ```
 ### Sending the message
-You can easily send the message to the webhook now! :tada: This will schedule a new AsyncTask on the Server's AsyncPool to prevent blocking the Main Thread. Do take noe however, that **you CANNOT send a blank message.** doing so will only produce an error received from Discord itself.
+You can easily send the message to the webhook now! :tada: This will schedule a new AsyncTask on the Server's AsyncPool to prevent blocking the Main Thread. Do take note however, that **you CANNOT send a blank message.** doing so will only produce an error received from Discord itself.
 ```php
 $webHook->send($msg);
 ```
@@ -42,7 +42,7 @@ Before you send the message, you might want to add an embed. A message can have 
 ```php
 $embed = new Embed();
 ```
-Now, the embed has to have something in it to function properly, so well add in a title (optional) and a description (optional). **All of the fields are optional, but it should contain ATLEAST one field or it would refuse to add it into the message**
+Now, the embed has to have something in it to function properly, so we'll add in a title (optional) and a description (optional). **All of the fields are optional, but it should contain ATLEAST one field or it would refuse to add it into the message**
 ```php
 $embed->setTitle("Embed Title Here");
 $embed->setDescription("A very awesome description");
@@ -55,7 +55,7 @@ Or even, add an icon to the footer...
 ```php
 $embed->setFooter("Erin is kawaii UwU","https://cortexpe.xyz/utils/kitsu.png");
 ```
-Now that the embed has been constructed and has a vaid content, we will have to add it to the `Message` object... We'll need to use the `Message->addEmbed()` method for that.
+Now that the embed has been constructed and has a valid content, we will have to add it to the `Message` object... We'll need to use the `Message->addEmbed()` method for that.
 ```php
 $msg->addEmbed($embed);
 ```
