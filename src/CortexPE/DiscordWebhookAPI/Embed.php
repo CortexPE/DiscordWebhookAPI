@@ -97,4 +97,9 @@ class Embed {
 			$this->data["footer"]["icon_url"] = $iconURL;
 		}
 	}
+
+	public function setTimestamp(\DateTime $timestamp):void{
+		$timestamp->setTimezone(new \DateTimeZone("UTC"));
+		$this->data["timestamp"] = $timestamp->format("Y-m-d\TH:i:s.v\Z");
+	}
 }
