@@ -2,7 +2,7 @@
 
 /**
  *
- * _____      __    _   ___ ___
+ *  _____      __    _   ___ ___
  * |   \ \    / /__ /_\ | _ \_ _|
  * | |) \ \/\/ /___/ _ \|  _/| |
  * |___/ \_/\_/   /_/ \_\_| |___|
@@ -42,6 +42,10 @@ class Webhook {
 
 	public function getURL(): string{
 		return $this->url;
+	}
+
+	public function isValid(): bool{
+		return filter_var($this->url, FILTER_VALIDATE_URL) !== false;
 	}
 
 	public function send(Message $message): void{
