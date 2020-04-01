@@ -5,4 +5,6 @@ projects:
   DiscordWebhookAPI:
     model: virion
     type: library
+    lint:
+      phpstan: false
 ...
