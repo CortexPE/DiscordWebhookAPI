@@ -4,6 +4,7 @@ branches:
 - PM4
 projects:
   DiscordWebhookAPI:
+    path: ""
     model: virion
     type: library
     lint:
