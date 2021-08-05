@@ -66,6 +66,10 @@ class Message implements \JsonSerializable {
 	public function setTextToSpeech(bool $ttsEnabled):void{
 		$this->data["tts"] = $ttsEnabled;
 	}
+	
+	public function setAllowedMentions(bool $roles = true, bool $users = true, bool $everyone = true): void {
+		$this->data["allowed_mentions"] = ["roles" => $roles, "users" => $users, "everyone" => $everyone];
+	}
 
 	public function jsonSerialize(){
 		return $this->data;
