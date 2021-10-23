@@ -31,8 +31,7 @@ namespace CortexPE\DiscordWebhookAPI;
 use function count;
 use function in_array;
 
-class AllowedMentions implements \JsonSerializable
-{
+class AllowedMentions implements \JsonSerializable {
 	/** @var bool */
 	private $parseUsers = true, $parseRoles = true, $mentionEveryone = true, $suppressAll = false;
 
@@ -88,8 +87,7 @@ class AllowedMentions implements \JsonSerializable
 		$this->suppressAll = true;
 	}
 
-	public function jsonSerialize(): array
-	{
+	public function jsonSerialize(): array {
 		if ($this->suppressAll) {
 			return [
 				"parse" => []
