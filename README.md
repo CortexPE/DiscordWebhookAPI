@@ -68,7 +68,7 @@ $msg->getAllowedMentions()->addRole($roleId1, $roleId2); // Now also all the peo
 
 But if you want to supress every mention out of that message you can use following method.
 ```php
-$msg->getAllowedMentions()->supressAll();
+$msg->getAllowedMentions()->suppressAll();
 ```
 
 **That's all for the Basic Usage of the API. To learn more, You can explore it by reading the API's source code yourself (the code is simple and explanatory) or by using your favorite IDE to index it yourself. :3**
@@ -83,6 +83,7 @@ $msg = new Message();
 $msg->setUsername("USERNAME");
 $msg->setAvatarURL("https://cortexpe.xyz/utils/kitsu.png");
 $msg->setContent("INSERT TEXT HERE");
+$msg->suppressAll();
 
 // Create an embed object with #FF0000 (RED) as the embed's color and "EMBED 1" as the title
 $embed = new Embed();
