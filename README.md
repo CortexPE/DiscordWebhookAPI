@@ -100,5 +100,24 @@ $msg->addEmbed($embed);
 
 $webHook->send($msg);
 ```
+
+Smart example:
+```php
+$webhook = new \CortexPE\DiscordWebhookAPI\Webhook("url");
+$webhook->send(
+\CortexPE\DiscordWebhookAPI\Message::create([
+    \CortexPE\DiscordWebhookAPI\Embed::create()
+    ->setTitle("Smart Embed")
+    ->setColor(0x0000FF)
+    ->addField("FIELD ONE", "Some text here")
+    ->addField("FIELD TWO", "Some text here", true)
+    ->addField("FIELD THREE", "Some text here", true)
+    ->setThumbnail("https://cortexpe.xyz/utils/kitsu.png")
+    ->setImage("https://cortexpe.xyz/utils/kitsu.png")
+    ->setFooter("Erin is kawaii UwU","https://cortexpe.xyz/utils/kitsu.png");
+])
+);
+```
+
 -----
 **This API was made with :heart: by CortexPE, Enjoy!~ :3**
