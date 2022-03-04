@@ -16,9 +16,9 @@ You'll need to import these classes in order to easily use it within our code.
 ```php
 <?php
 
-use CortexPE\DiscordWebhookAPI\Message;
-use CortexPE\DiscordWebhookAPI\Webhook;
-use CortexPE\DiscordWebhookAPI\Embed; // optional
+use supercrafter333\DiscordWebhooksX\Message;
+use supercrafter333\DiscordWebhooksX\Webhook;
+use supercrafter333\DiscordWebhooksX\Embed; // optional
 ```
 ### Construct a Discord `Webhook` object
 You'll need the Webhook's URL. For more information regarding how to create Discord webhooks on a Discord Text Channel, Please [click here](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks).
@@ -83,7 +83,7 @@ $msg->addEmbed($embed);
 $embed = new Embed();
 $embed->setTitle("EMBED 2");
 $embed->setColor(0x00FF00);
-$embed->setAuthor("AUTHOR", "https://CortexPE.xyz", "https://cortexpe.xyz/utils/kitsu.png");
+$embed->setAuthor("AUTHOR", "https://supercrafter333.xyz", "https://cortexpe.xyz/utils/kitsu.png");
 $embed->setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
 $msg->addEmbed($embed);
 
@@ -103,10 +103,10 @@ $webHook->send($msg);
 
 Smart example:
 ```php
-$webhook = new \CortexPE\DiscordWebhookAPI\Webhook("url");
+$webhook = new \supercrafter333\DiscordWebhooksX\Webhook("url");
 $webhook->send(
-\CortexPE\DiscordWebhookAPI\Message::create([
-    \CortexPE\DiscordWebhookAPI\Embed::create()
+\supercrafter333\DiscordWebhooksX\Message::create([
+    \supercrafter333\DiscordWebhooksX\Embed::create()
     ->setTitle("Smart Embed")
     ->setColor(0x0000FF)
     ->addField("FIELD ONE", "Some text here")
