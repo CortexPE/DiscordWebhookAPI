@@ -1,11 +1,10 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/CortexPE/DiscordWebhookAPI
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/supercrafter333/DiscordWebhooksX
 branches:
-- master
 - PM4
 projects:
-  DiscordWebhookAPI:
+  DiscordWebhooksX:
     model: virion
     type: library
     lint:
-      phpstan: false
+      phpstan: true
 ...
