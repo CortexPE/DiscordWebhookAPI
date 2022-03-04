@@ -1,5 +1,5 @@
-name: DiscordWebhookAPI
-antigen: CortexPE\DiscordWebhookAPI
+name: DiscordWebhooksX
+antigen: supercrafter333\DiscordWebhooksX
 api: 4.0.0
-version: 1.0.2
-author: CortexPE
+version: 1.0.0
+authors: ["CortexPE", "supercrafter333"]
