@@ -1,5 +1,7 @@
-<h1>DiscordWebhookAPI<img src="https://raw.githubusercontent.com/CortexPE/DiscordWebhookAPI/master/dwapi.png" height="64" width="64" align="left"></img>&nbsp;<img src="https://poggit.pmmp.io/ci.shield/CortexPE/DiscordWebhookAPI/~"></img></h1>
+<h1>DiscordWebhooksX<img src="https://raw.githubusercontent.com/CortexPE/DiscordWebhookAPI/master/dwapi.png" height="64" width="64" align="left"></img>&nbsp;<img src="https://poggit.pmmp.io/ci.shield/CortexPE/DiscordWebhookAPI/~"></img></h1>
 <br />
+
+A better fork of CortexPE's [DiscordWebhookAPI](https://github.com/CortexPE/DiscordWebhookAPI) library.
 
 A PocketMine-MP Virion to easily send messages via Discord Webhooks
 
