@@ -29,6 +29,8 @@ declare(strict_types = 1);
 namespace supercrafter333\DiscordWebhooksX;
 
 
+use CortexPE\DiscordWebhookAPI\AllowedMentions;
+
 class Message implements \JsonSerializable
 {
     /** @var array */
@@ -89,6 +91,15 @@ class Message implements \JsonSerializable
     {
         $this->data["tts"] = $ttsEnabled;
         return $this;
+    }
+
+    public function getAllowedMentions(): AllowedMentions
+    {
+        if (array_key_exists("allowed_mentions", $this->data)) {
+            return $this->data["allowed_mentions"];
+        }
+
+        return $this->data["allowed_mentions"] = new AllowedMentions();
     }
 
     public function jsonSerialize()
