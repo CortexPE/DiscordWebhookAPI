@@ -102,4 +102,8 @@ class Embed {
 		$timestamp->setTimezone(new \DateTimeZone("UTC"));
 		$this->data["timestamp"] = $timestamp->format("Y-m-d\TH:i:s.v\Z");
 	}
+	
+	public function setURL(string $url): void{
+		$this->data["url"] = $url;
+	}
 }
