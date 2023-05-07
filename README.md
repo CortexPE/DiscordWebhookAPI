@@ -59,6 +59,19 @@ Now that the embed has been constructed and has a valid content, we will have to
 ```php
 $msg->addEmbed($embed);
 ```
+
+You can even enable specific mentions, using the following statement: `Message->getAllowedMentions()`. The only things you need are discord snowflakes/ids.
+Be aware, if you call `Message->getAllowedMentions()` you will get a new instance of the `AllowedMentions` class, which will allowing all mentions passing through.
+```php
+$msg->getAllowedMentions()->addUser($userId1, $userId2); // Only the two users corresponding with these two ids will be mentioned
+$msg->getAllowedMentions()->addRole($roleId1, $roleId2); // Now also all the people with $roleId1 and $roleId2 will be mentioned
+```
+
+But if you want to suppress every mention out of that message you can use following method.
+```php
+$msg->getAllowedMentions()->suppressAll();
+```
+
 **That's all for the Basic Usage of the API. To learn more, You can explore it by reading the API's source code yourself (the code is simple and explanatory) or by using your favorite IDE to index it yourself. :3**
 # Sample Code used to test this API earlier:
 ```php
@@ -71,6 +84,7 @@ $msg = new Message();
 $msg->setUsername("USERNAME");
 $msg->setAvatarURL("https://cortexpe.xyz/utils/kitsu.png");
 $msg->setContent("INSERT TEXT HERE");
+$msg->suppressAll();
 
 // Create an embed object with #FF0000 (RED) as the embed's color and "EMBED 1" as the title
 $embed = new Embed();

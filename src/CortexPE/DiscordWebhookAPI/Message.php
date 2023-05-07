@@ -66,6 +66,14 @@ class Message implements \JsonSerializable {
 	public function setTextToSpeech(bool $ttsEnabled):void{
 		$this->data["tts"] = $ttsEnabled;
 	}
+	
+	public function getAllowedMentions(): AllowedMentions {
+		if (array_key_exists("allowed_mentions", $this->data)) {
+			return $this->data["allowed_mentions"];
+		}
+
+		return $this->data["allowed_mentions"] = new AllowedMentions();
+	}
 
 	public function jsonSerialize(){
 		return $this->data;
