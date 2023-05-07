@@ -60,13 +60,14 @@ Now that the embed has been constructed and has a valid content, we will have to
 $msg->addEmbed($embed);
 ```
 
-You can even enable specific mentions, using the following statement: `Message->getAllowedMentions`. The only things you need are discord snowflakes/ids.
+You can even enable specific mentions, using the following statement: `Message->getAllowedMentions()`. The only things you need are discord snowflakes/ids.
+Be aware, if you call `Message->getAllowedMentions()` you will get a new instance of the `AllowedMentions` class, which will allowing all mentions passing through.
 ```php
-$msg->getAllowedMentions()->addUser($userId1, $userId2); // Only the two users corresponding with these two ids will be mentionend
+$msg->getAllowedMentions()->addUser($userId1, $userId2); // Only the two users corresponding with these two ids will be mentioned
 $msg->getAllowedMentions()->addRole($roleId1, $roleId2); // Now also all the people with $roleId1 and $roleId2 will be mentioned
 ```
 
-But if you want to supress every mention out of that message you can use following method.
+But if you want to suppress every mention out of that message you can use following method.
 ```php
 $msg->getAllowedMentions()->suppressAll();
 ```
