@@ -67,7 +67,7 @@ class Message implements \JsonSerializable {
 		$this->data["tts"] = $ttsEnabled;
 	}
 
-	public function jsonSerialize(){
+	public function jsonSerialize(): mixed{
 		return $this->data;
 	}
 }
