@@ -28,7 +28,6 @@ declare(strict_types = 1);
 
 namespace CortexPE\DiscordWebhookAPI;
 
-
 use CortexPE\DiscordWebhookAPI\task\DiscordWebhookSendTask;
 use pocketmine\Server;
 
