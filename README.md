@@ -99,4 +99,4 @@ $msg->addEmbed($embed);
 $webHook->send($msg);
 ```
 -----
-**This API was made with :heart: by CortexPE, Enjoy!~ :3**
+**This API was made with :heart: by CortexPE, Enjoy!~ :<3**
