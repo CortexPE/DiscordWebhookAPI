@@ -26,7 +26,7 @@
 
 declare(strict_types = 1);
 
-namespace CortexPE\DiscordWebhookAPI;
+namespace Biswajit\libs\CortexPE\DiscordWebhookAPI;
 
 
 class Message implements \JsonSerializable {
@@ -67,7 +67,7 @@ class Message implements \JsonSerializable {
 		$this->data["tts"] = $ttsEnabled;
 	}
 
-	public function jsonSerialize(){
+	public function jsonSerialize(): array{
 		return $this->data;
 	}
 }
