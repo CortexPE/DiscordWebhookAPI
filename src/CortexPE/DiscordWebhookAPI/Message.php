@@ -26,7 +26,7 @@
 
 declare(strict_types = 1);
 
-namespace Biswajit\libs\CortexPE\DiscordWebhookAPI;
+namespace CortexPE\DiscordWebhookAPI;
 
 
 class Message implements \JsonSerializable {
