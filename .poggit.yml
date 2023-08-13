@@ -2,6 +2,7 @@
 branches:
 - master
 - PM4
+- PM5
 projects:
   DiscordWebhookAPI:
     model: virion
