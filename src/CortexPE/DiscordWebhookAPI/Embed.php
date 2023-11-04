@@ -32,7 +32,7 @@ namespace CortexPE\DiscordWebhookAPI;
 
 class Embed {
     /** @var array */
-    protected $data = [];
+    protected array $data = [];
 
     public function asArray(): array{
         // Why doesn't PHP have a `__toArray()` magic method??? This would've been better.
